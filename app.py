@@ -13,3 +13,6 @@ def tiempo():
     wtiempo=widget_tiempo('tiempo')
     dev=wtiempo.view()
     return dev
+@app.route('/strava/')
+def strava():
+    return '<h1>strava datos</h1>'
