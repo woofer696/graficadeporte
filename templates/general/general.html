@@ -1,1 +1,23 @@
-<h1>hola alex</h1>
+
+
+<!DOCTYPE html>
+<html>
+
+  {% include '/general/header.html' %}
+  <body>
+    <header>
+      <div class="container">
+        <strong><nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('tiempo') }}">Tiempo</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('strava') }}">Strava</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container min-vh-100">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
